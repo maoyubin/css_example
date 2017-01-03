@@ -1,0 +1,78 @@
+html{
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+input{
+  display: none;
+}
+
+label{
+  display: inline-block;
+  height: 150px;
+  width: 225px;
+  border: 4px solid black;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+label img{
+  height: 100%;
+  width: 100%;
+}
+
+.bigscreen{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+input:checked + div + label{
+  opacity: 1;
+}
+
+#img1:checked + div{
+  background-image: url(https://static.pexels.com/photos/24353/pexels-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#img2:checked + div{
+  background-image: url(https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#img3:checked + div{
+  background-image: url(https://static.pexels.com/photos/26796/pexels-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#img4:checked ~ div{
+  background-image: url(https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+#img5:checked ~ div{
+  background-image: url(https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
