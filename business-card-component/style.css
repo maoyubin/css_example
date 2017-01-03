@@ -42,7 +42,7 @@ body {
   float: left;
 }
 
-.card-container .inline *{ 
+.card-container .inline > *{ 
   display: inline-block;
 }
 
@@ -132,7 +132,14 @@ label[for="card-flip"]:hover > .card {
   transform: rotateX(180deg);
 }
 
+.user-encyc {
+	display: block;
+	margin: 0.5em 0.5em;
+}
 
+.user-encyc * {
+	display: block;
+}
 
 /*media queries*/
 
